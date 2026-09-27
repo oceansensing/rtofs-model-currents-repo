@@ -35,3 +35,12 @@ Pages and R2), and `status/status.json` read at 2026-09-27T05:36:22Z: every
 product `fresh` (1 of 1), the nearest frame 0.39 h
 from the reader. The schedule `21 2,8,14,20 * * *` was then turned on (longest gap
 6 h, so the watchdog's silence budget is 10 h).
+
+## The workflow's packages come from the site — 2026-09-27
+
+The publish workflow installs `site/scripts/requirements-rtofs.txt`, one file
+per fetcher family, instead of naming packages in its own `pip install`
+line. Dependabot reads requirements files and never a workflow line: an
+inline pin elsewhere had carried `requests` 2.32.3, a version with two
+advisories, unflagged. The site's `check:docs` now refuses an inline package
+here. Confirmed by a dispatched run, green on build, Pages and R2.
