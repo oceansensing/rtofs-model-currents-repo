@@ -118,10 +118,20 @@ fact from a guess that aged.
 
 - **`PLAN.md`** — the founding plan and running record.
 - **`DECISIONS.md`** — dated one-way decisions, D1 onward.
-- **`pipeline/products.toml`** — not written yet.
+- **`pipeline/products.toml`** — the products, the step and the budget.
+- **`.github/workflows/publish.yml`** — the publish workflow.
 
 ## What must not be got wrong here
 
+- **Global surface currents are not in the global NetCDF files** — only
+  barotropic ones, a different quantity — so this is the US East subset
+  (option A, 2026-09-27); global surface currents are option B.
+- **The Gulf Stream is the control on every run**, as ECCOFS's: the fast
+  water off Cape Hatteras must flow between 30 and 135 degrees (73 on the
+  first live run).
+- **The files are compressed HDF5**, read by `h5py` through HTTP Range
+  requests; the regional file's chunks hold ten depths each, so a surface
+  field costs about 36 MB.
 - **Every reader in this project assumes a regular latitude/longitude
   lattice.** If the model's grid is not one, the regrid is the product, and
   it gets a positive control before its output is believed.

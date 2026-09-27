@@ -3,12 +3,19 @@
 The RTOFS **currents** — a data repository of the oceansensing ocean map system: its own
 Pages site, its own schedule, its own gigabyte, holding no code of its own.
 
-**Nothing is published yet** (2026-09-27). `PLAN.md` is the founding plan;
+**Built, rehearsed and taken live 2026-09-27** — published to Pages and R2,
+not drawn on the website's map. `PLAN.md` is the founding plan;
 `CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
 
-## What it will publish
+## What it publishes
 
 NOAA's Global Real-Time Ocean Forecast System's **surface currents**.
+
+| root | quantity | grid |
+| --- | --- | --- |
+| `cur-rtofs-useast.json` | surface currents, a vector pair | US East, 0.08 degree, `regional: true` |
+
+About 7 MB (measured 2026-09-27).
 
 These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports
