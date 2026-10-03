@@ -1,0 +1,38 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-03T15:26:10Z",
+ "mode": "full",
+ "run": {
+  "id": "37133193890",
+  "url": "https://github.com/oceansensing/rtofs-model-currents-repo/actions/runs/37133193890"
+ },
+ "schedule": {
+  "crons": [
+   "21 2,8,14,20 * * *"
+  ],
+  "longestGapHours": 6.0
+ },
+ "products": {
+  "cur-rtofs-useast": {
+   "title": "RTOFS US East surface currents",
+   "roots": [
+    "cur-rtofs-useast.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-03T15:26:10Z",
+   "updated": "2026-10-03T15:26:10Z",
+   "hour": "2026-10-03T12:00:00Z",
+   "modelRun": "2026-10-03T00:00:00Z",
+   "source": "NOAA NCEP Global RTOFS",
+   "hours": [
+    "2026-10-03T12:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 3.44,
+   "nearestOffsetHours": 3.44
+  }
+ }
+}
