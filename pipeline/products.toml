@@ -24,7 +24,7 @@ timeout_minutes = 20
 
 # Named after the server.
 [steps.rtofs]
-cmd = ["python3", "scripts/fetch-rtofs.py", "--only=cur-rtofs-useast"]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=cur-rtofs-useast,cur-rtofs-useast-nearbottom"]
 lane = "noaa-rtofs-bucket"
 
 [products.cur-rtofs-useast]
@@ -34,3 +34,14 @@ roots = ["cur-rtofs-useast.json"]
 writes = ["cur-rtofs-useast.json"]
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=cur-rtofs-useast"]
+
+# **R2's alone** (2026-10-09, the site pipeline's D13 note): `r2_only` leaves it out of
+# the Pages site and Pages' status; the R2 job publishes it beside the rest.
+[products.cur-rtofs-useast-nearbottom]
+title = "RTOFS US East near-bottom currents"
+step = "rtofs"
+roots = ["cur-rtofs-useast-nearbottom.json"]
+writes = ["cur-rtofs-useast-nearbottom.json"]
+max_age_hours = 12
+r2_only = true
+namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=cur-rtofs-useast-nearbottom"]
