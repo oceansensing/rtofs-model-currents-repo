@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "cur-rtofs-useast-nearbottom",
+ "title": "RTOFS US East near-bottom currents",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-24T08:35:57Z",
+ "updated": "2026-10-24T08:35:57Z",
+ "hour": "2026-10-24T12:00:00Z",
+ "modelRun": "2026-10-23T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-10-24T12:00:00Z"
+ ],
+ "files": {
+  "cur-rtofs-useast-nearbottom.json": {
+   "bytes": 6569151,
+   "sha256": "57cd94c90cde9bff0f1fa969c52b57b51efde2ea25da030cc21467e52014f3c0"
+  }
+ }
+}
