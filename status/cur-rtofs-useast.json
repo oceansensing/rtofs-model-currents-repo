@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "cur-rtofs-useast",
+ "title": "RTOFS US East surface currents",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-14T14:25:19Z",
+ "updated": "2026-11-14T14:25:19Z",
+ "hour": "2026-11-14T12:00:00Z",
+ "modelRun": "2026-11-14T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-14T12:00:00Z"
+ ],
+ "files": {
+  "cur-rtofs-useast.json": {
+   "bytes": 7139359,
+   "sha256": "eb29987d0c50f068b08fdc502b80501e88103d59757ead5c17880f67d8a7564d"
+  }
+ }
+}
