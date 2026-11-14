@@ -22,14 +22,22 @@ roots = ["node", "scripts/test-schema.mjs", "--roots"]
 [defaults]
 timeout_minutes = 20
 
-# Named after the server.
-[steps.rtofs]
-cmd = ["python3", "scripts/fetch-rtofs.py", "--only=cur-rtofs-useast,cur-rtofs-useast-nearbottom"]
+# **A step a product** (2026-11-14), each named for the product it makes and
+# scoped to it. A step's exit is the fate of every product it makes, and as
+# one step for both, either's refusal held the other with it
+# (`rtofs-model-fields-repo` has the day it happened there). One lane, so
+# the steps ask NOAA's bucket one at a time, in this order.
+[steps.cur-rtofs-useast]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=cur-rtofs-useast"]
+lane = "noaa-rtofs-bucket"
+
+[steps.cur-rtofs-useast-nearbottom]
+cmd = ["python3", "scripts/fetch-rtofs.py", "--only=cur-rtofs-useast-nearbottom"]
 lane = "noaa-rtofs-bucket"
 
 [products.cur-rtofs-useast]
 title = "RTOFS US East surface currents"
-step = "rtofs"
+step = "cur-rtofs-useast"
 roots = ["cur-rtofs-useast.json"]
 writes = ["cur-rtofs-useast.json"]
 max_age_hours = 12
@@ -39,7 +47,7 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=cur-rto
 # the Pages site and Pages' status; the R2 job publishes it beside the rest.
 [products.cur-rtofs-useast-nearbottom]
 title = "RTOFS US East near-bottom currents"
-step = "rtofs"
+step = "cur-rtofs-useast-nearbottom"
 roots = ["cur-rtofs-useast-nearbottom.json"]
 writes = ["cur-rtofs-useast-nearbottom.json"]
 max_age_hours = 12

@@ -44,3 +44,14 @@ line. Dependabot reads requirements files and never a workflow line: an
 inline pin elsewhere had carried `requests` 2.32.3, a version with two
 advisories, unflagged. The site's `check:docs` now refuses an inline package
 here. Confirmed by a dispatched run, green on build, Pages and R2.
+
+## 2026-11-14 — a step a product
+
+Until today one step made both products, and a step's exit is the fate of
+every product it makes: either's refusal held the other with it.
+`rtofs-model-fields-repo`'s record has the day that happened there — one
+product's range refusal holding all eight for two runs. **Each product has a
+step of its own** in `pipeline/products.toml` now, named for it and scoped to
+it with `--only=`, both in the one lane. Rehearsed through the orchestrator
+with the site's fetcher: two steps, two `fresh`, both files matching the
+contract.
