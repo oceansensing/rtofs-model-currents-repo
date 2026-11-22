@@ -33,9 +33,9 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | --- | --- | --- |
 | `cur-rtofs-useast-nearbottom.json` | the current at each column's deepest wet level of the 40 depths | US East, 0.08 degree, `regional: true` |
 
-## The times either side (declared 2026-11-22; no run had published them when this was written)
+## The times either side (since 2026-11-22)
 
-Both roots are declared to publish two days ahead and one
+Both roots publish two days ahead and one
 behind (DECISIONS D3), six-hourly. A root's header lists every time in `moreFrames`, its own
 among them; none lists `frames`. An hour read while ahead is `<root>.v<time>.json`, and
 keeps that name once behind; an hour read when it is already behind is

@@ -56,8 +56,8 @@ it with `--only=`, both in the one lane. Rehearsed through the orchestrator
 with the site's fetcher: two steps, two `fresh`, both files matching the
 contract.
 
-## 2026-11-22 — the times either side, declared and rehearsed; not yet run (D3)
+## 2026-11-22 — the times either side, declared, rehearsed and publishing (D3)
 
 Both products declare 48 hours ahead and 24 behind (`82eac0d`, pushed 16:33 UTC). Rehearsed, nothing published: a
-new cycle 277 seconds and 192.0 MB to R2, the run six hours on 46 seconds and 27.5 MB. Open: the first scheduled
-run and the second, where keeping is proven.
+new cycle 277 seconds and 192.0 MB to R2, the run six hours on 46 seconds and 27.5 MB. **The first run**, `45066249248` (20:24–20:31 UTC): both roots fresh, each from 24 hours behind to 48
+ahead, none left out, 35 files on R2 and the branch moved after them. Open: the second run, where keeping is proven.
