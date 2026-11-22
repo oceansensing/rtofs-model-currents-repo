@@ -18,8 +18,9 @@ NOAA's Global Real-Time Ocean Forecast System's **surface currents**.
 About 7 MB (measured 2026-09-27).
 
 These products are published **operationally but not drawn on the website's
-map** — the owner's call, 2026-09-27. The map's status line still reports
-them when they fall behind, which is how their health stays visible.
+map** — the owner's call, 2026-09-27. The map's status
+line reports those Pages carries when they fall behind; those R2 alone carries
+are in the status on R2 and on the `published` branch, not Pages'.
 
 ## Published to R2 alone (since 2026-10-10)
 
@@ -32,12 +33,13 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | --- | --- | --- |
 | `cur-rtofs-useast-nearbottom.json` | the current at each column's deepest wet level of the 40 depths | US East, 0.08 degree, `regional: true` |
 
-## The times either side (since 2026-11-22)
+## The times either side (declared 2026-11-22; no run had published them when this was written)
 
-Both roots publish two days ahead and one
+Both roots are declared to publish two days ahead and one
 behind (DECISIONS D3), six-hourly. A root's header lists every time in `moreFrames`, its own
-among them; none lists `frames`. A time ahead is `<root>.v<time>.json`; one behind
-that the newest cycle made is `<root>.v<time>.r<run>.json` — its nowcast up to
+among them; none lists `frames`. An hour read while ahead is `<root>.v<time>.json`, and
+keeps that name once behind; an hour read when it is already behind is
+`<root>.v<time>.r<run>.json`, from the newest cycle's nowcast up to
 the cycle, its forecast after. Every dated file is R2's alone: none is on Pages
 or the `published` branch.
 
@@ -57,9 +59,9 @@ workflow, and nothing else executable. Each run publishes to GitHub Pages and
 to Cloudflare R2 from one build. Sibling repositories of the same model:
 `rtofs-model-fields-repo`.
 
-**Which document gets what, and what "update docs" means across all
-twenty repositories, is the doctrine block at the top of `CLAUDE.md`** —
-the same text in all twenty, held equal by the site's `check:docs`.
+**Which document gets what, and what "update docs" means across every
+repository of this project, is the doctrine block at the top of `CLAUDE.md`** —
+the same text in each, held equal by the site's `check:docs`.
 
 ## Structure
 

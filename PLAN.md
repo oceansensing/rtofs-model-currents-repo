@@ -55,3 +55,9 @@ step of its own** in `pipeline/products.toml` now, named for it and scoped to
 it with `--only=`, both in the one lane. Rehearsed through the orchestrator
 with the site's fetcher: two steps, two `fresh`, both files matching the
 contract.
+
+## 2026-11-22 — the times either side, declared and rehearsed; not yet run (D3)
+
+Both products declare 48 hours ahead and 24 behind (`82eac0d`, pushed 16:33 UTC). Rehearsed, nothing published: a
+new cycle 277 seconds and 192.0 MB to R2, the run six hours on 46 seconds and 27.5 MB. Open: the first scheduled
+run and the second, where keeping is proven.
