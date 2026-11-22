@@ -32,6 +32,15 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | --- | --- | --- |
 | `cur-rtofs-useast-nearbottom.json` | the current at each column's deepest wet level of the 40 depths | US East, 0.08 degree, `regional: true` |
 
+## The times either side (since 2026-11-22)
+
+Both roots publish two days ahead and one
+behind (DECISIONS D3), six-hourly. A root's header lists every time in `moreFrames`, its own
+among them; none lists `frames`. A time ahead is `<root>.v<time>.json`; one behind
+that the newest cycle made is `<root>.v<time>.r<run>.json` — its nowcast up to
+the cycle, its forecast after. Every dated file is R2's alone: none is on Pages
+or the `published` branch.
+
 ## Where the data comes from
 
 **Source**: NOAA's open-data bucket on AWS, registry entry

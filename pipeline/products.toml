@@ -19,8 +19,13 @@
 check = ["node", "scripts/test-schema.mjs"]
 roots = ["node", "scripts/test-schema.mjs", "--roots"]
 
+# **Two days ahead and one behind** (2026-11-22, DECISIONS D3; the site
+# pipeline's D16): `hours_ahead` and `hours_behind` are each product's window,
+# its dated files R2's alone and kept there while a base lists them. The base
+# is read first and the hours added inside ten minutes of a step; a step has
+# thirty, since one request gives up after eleven.
 [defaults]
-timeout_minutes = 20
+timeout_minutes = 30
 
 # **A step a product** (2026-11-14), each named for the product it makes and
 # scoped to it. A step's exit is the fate of every product it makes, and as
@@ -39,7 +44,11 @@ lane = "noaa-rtofs-bucket"
 title = "RTOFS US East surface currents"
 step = "cur-rtofs-useast"
 roots = ["cur-rtofs-useast.json"]
-writes = ["cur-rtofs-useast.json"]
+writes = ["cur-rtofs-useast.json", "cur-rtofs-useast.v*.json"]
+r2_only = ["cur-rtofs-useast.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=cur-rtofs-useast"]
 
@@ -49,7 +58,10 @@ namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=cur-rto
 title = "RTOFS US East near-bottom currents"
 step = "cur-rtofs-useast-nearbottom"
 roots = ["cur-rtofs-useast-nearbottom.json"]
-writes = ["cur-rtofs-useast-nearbottom.json"]
+writes = ["cur-rtofs-useast-nearbottom.json", "cur-rtofs-useast-nearbottom.v*.json"]
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
 max_age_hours = 12
 r2_only = true
 namespace = ["python3", "scripts/fetch-rtofs.py", "--namespace", "--only=cur-rtofs-useast-nearbottom"]
