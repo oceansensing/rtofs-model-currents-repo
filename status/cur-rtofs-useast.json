@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "product": "cur-rtofs-useast",
+ "title": "RTOFS US East surface currents",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:26:57Z",
+ "updated": "2026-11-28T14:26:57Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "cur-rtofs-useast.json": {
+   "bytes": 7185453,
+   "sha256": "34abdcc5153c1a26e3c5edda22eecdf5e10653f96f76673f3d8a25d7c3888a13"
+  },
+  "cur-rtofs-useast.v20261127T1200Z.r20261128T0000Z.json": {
+   "bytes": 7193322
+  },
+  "cur-rtofs-useast.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 7225331
+  },
+  "cur-rtofs-useast.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 7184559
+  },
+  "cur-rtofs-useast.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 7177856
+  },
+  "cur-rtofs-useast.v20261128T1200Z.json": {
+   "bytes": 7182207
+  },
+  "cur-rtofs-useast.v20261128T1800Z.json": {
+   "bytes": 7207072
+  },
+  "cur-rtofs-useast.v20261129T0000Z.json": {
+   "bytes": 7188039
+  },
+  "cur-rtofs-useast.v20261129T0600Z.json": {
+   "bytes": 7164682
+  },
+  "cur-rtofs-useast.v20261129T1200Z.json": {
+   "bytes": 7168984
+  },
+  "cur-rtofs-useast.v20261129T1800Z.json": {
+   "bytes": 7199311
+  },
+  "cur-rtofs-useast.v20261130T0000Z.json": {
+   "bytes": 7196586
+  },
+  "cur-rtofs-useast.v20261130T0600Z.json": {
+   "bytes": 7172859
+  },
+  "cur-rtofs-useast.v20261130T1200Z.json": {
+   "bytes": 7167017
+  }
+ }
+}

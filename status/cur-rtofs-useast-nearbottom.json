@@ -1,0 +1,60 @@
+{
+ "schema": 1,
+ "product": "cur-rtofs-useast-nearbottom",
+ "title": "RTOFS US East near-bottom currents",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T14:26:57Z",
+ "updated": "2026-11-28T14:26:57Z",
+ "hour": "2026-11-28T12:00:00Z",
+ "modelRun": "2026-11-28T00:00:00Z",
+ "source": "NOAA NCEP Global RTOFS",
+ "hours": [
+  "2026-11-28T12:00:00Z"
+ ],
+ "files": {
+  "cur-rtofs-useast-nearbottom.json": {
+   "bytes": 6568964,
+   "sha256": "46481744c253a31fe0873313017a134dd383a3e39b101cc04f1c2bef6a079612"
+  },
+  "cur-rtofs-useast-nearbottom.v20261127T1200Z.r20261128T0000Z.json": {
+   "bytes": 6563002
+  },
+  "cur-rtofs-useast-nearbottom.v20261127T1800Z.r20261128T0000Z.json": {
+   "bytes": 6558490
+  },
+  "cur-rtofs-useast-nearbottom.v20261128T0000Z.r20261128T0000Z.json": {
+   "bytes": 6552975
+  },
+  "cur-rtofs-useast-nearbottom.v20261128T0600Z.r20261128T0000Z.json": {
+   "bytes": 6559701
+  },
+  "cur-rtofs-useast-nearbottom.v20261128T1200Z.json": {
+   "bytes": 6565432
+  },
+  "cur-rtofs-useast-nearbottom.v20261128T1800Z.json": {
+   "bytes": 6563704
+  },
+  "cur-rtofs-useast-nearbottom.v20261129T0000Z.json": {
+   "bytes": 6567094
+  },
+  "cur-rtofs-useast-nearbottom.v20261129T0600Z.json": {
+   "bytes": 6568436
+  },
+  "cur-rtofs-useast-nearbottom.v20261129T1200Z.json": {
+   "bytes": 6563773
+  },
+  "cur-rtofs-useast-nearbottom.v20261129T1800Z.json": {
+   "bytes": 6563896
+  },
+  "cur-rtofs-useast-nearbottom.v20261130T0000Z.json": {
+   "bytes": 6565690
+  },
+  "cur-rtofs-useast-nearbottom.v20261130T0600Z.json": {
+   "bytes": 6564974
+  },
+  "cur-rtofs-useast-nearbottom.v20261130T1200Z.json": {
+   "bytes": 6560380
+  }
+ }
+}
